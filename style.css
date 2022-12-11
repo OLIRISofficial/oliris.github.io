@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: 'Inter', sans-serif;
+	line-height: 1;
+	background-color: black;
+}
+h1, h2, h3, h4, h5, h6, p{
+	color: white;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    scrollbar-color: white rgba(1,1,1,0);
+    /* scrollbar-width: thin; */
+}
+*::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+*::-webkit-scrollbar-track-piece{
+    background-color:rgba(1,1,1,0);
+}
+*::-webkit-scrollbar-thumb{
+    background-color:white;
+}
+@font-face {
+    font-family: 'LogoFont';
+    src: url('SRC/Font/LogoFont/logofont-webfont.woff2') format('woff2'),
+         url('SRC/Font/LogoFont/logofont-webfont.woff') format('woff'),
+         url('SRC/Font/LogoFont/logofont-webfont.ttf') format('truetype'),
+         url('SRC/Font/LogoFont/logofont-webfont.svg#logofontregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+::-moz-selection {
+	color: black;
+	background: white;
+}
+::selection {
+	color: black;
+	background: white;
+}
+nav {
+	height: 60px;
+	text-align: center;
+	display: grid;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background:-webkit-gradient( linear, left top, left bottom, from(hsl(0, 0%, 0%)), color-stop(8.4%, hsla(0, 0%, 0%, 0.987)), color-stop(16.6%, hsla(0, 0%, 0%, 0.951)), color-stop(24.8%, hsla(0, 0%, 0%, 0.896)), color-stop(32.8%, hsla(0, 0%, 0%, 0.825)), color-stop(40.6%, hsla(0, 0%, 0%, 0.741)), color-stop(48.2%, hsla(0, 0%, 0%, 0.648)), color-stop(55.5%, hsla(0, 0%, 0%, 0.55)), color-stop(62.5%, hsla(0, 0%, 0%, 0.45)), color-stop(69.1%, hsla(0, 0%, 0%, 0.352)), color-stop(75.4%, hsla(0, 0%, 0%, 0.259)), color-stop(81.3%, hsla(0, 0%, 0%, 0.175)), color-stop(86.7%, hsla(0, 0%, 0%, 0.104)), color-stop(91.7%, hsla(0, 0%, 0%, 0.049)), color-stop(96.1%, hsla(0, 0%, 0%, 0.013)), to(hsla(0, 0%, 0%, 0)) );
+    background:-o-linear-gradient( top, hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0.987) 8.4%, hsla(0, 0%, 0%, 0.951) 16.6%, hsla(0, 0%, 0%, 0.896) 24.8%, hsla(0, 0%, 0%, 0.825) 32.8%, hsla(0, 0%, 0%, 0.741) 40.6%, hsla(0, 0%, 0%, 0.648) 48.2%, hsla(0, 0%, 0%, 0.55) 55.5%, hsla(0, 0%, 0%, 0.45) 62.5%, hsla(0, 0%, 0%, 0.352) 69.1%, hsla(0, 0%, 0%, 0.259) 75.4%, hsla(0, 0%, 0%, 0.175) 81.3%, hsla(0, 0%, 0%, 0.104) 86.7%, hsla(0, 0%, 0%, 0.049) 91.7%, hsla(0, 0%, 0%, 0.013) 96.1%, hsla(0, 0%, 0%, 0) 100% );
+	background:linear-gradient( to bottom, hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0.987) 8.4%, hsla(0, 0%, 0%, 0.951) 16.6%, hsla(0, 0%, 0%, 0.896) 24.8%, hsla(0, 0%, 0%, 0.825) 32.8%, hsla(0, 0%, 0%, 0.741) 40.6%, hsla(0, 0%, 0%, 0.648) 48.2%, hsla(0, 0%, 0%, 0.55) 55.5%, hsla(0, 0%, 0%, 0.45) 62.5%, hsla(0, 0%, 0%, 0.352) 69.1%, hsla(0, 0%, 0%, 0.259) 75.4%, hsla(0, 0%, 0%, 0.175) 81.3%, hsla(0, 0%, 0%, 0.104) 86.7%, hsla(0, 0%, 0%, 0.049) 91.7%, hsla(0, 0%, 0%, 0.013) 96.1%, hsla(0, 0%, 0%, 0) 100% );
+	padding-top: 15px;
+}
+nav h1{
+	font-family: LogoFont;
+	font-size: 50px;
+	margin: 0;
+}
+section h1{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 60px;
+}
+.About{
+	padding: 75px 15px 0px 15px;
+	height: calc(100vh - 75px);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.About div:nth-child(1){
+	display: grid;
+	align-items: end;
+}
+.About div:nth-child(2){
+	display: grid;
+	align-items: center;
+}
+.About div:nth-child(2) p{
+	width: 100%;
+	text-align: center;
+}
+.Creations{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 30px 1fr 1fr 1fr 30px;
+	grid-template-rows: 30px 300px 200px;
+	position: relative;
+	padding: 0px 15px;
+}
+.Creation{
+	width: 100%;
+	height: 100%;
+	border: 1px solid white;
+	border-right: none;
+	border-bottom: none;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+.Creation.top-border,.Creation.top-left-border,.Creation.top-right-border{
+	width: 100%;
+	height: 100%;
+	border: 1px solid white;
+	border-bottom: none;
+	border-right: none;
+}
+.Creation.top-left-border,.Creation.top-right-border{
+	border:none;
+	position: relative;
+	overflow: hidden;
+}
+.Creation.top-left-border::after,.Creation.top-right-border::after{
+	content: "";
+	width: 200%;
+	height: 200%;
+	position: absolute;
+	bottom:-1px;
+	border: 1.4px solid white;
+	border-radius: 50%;
+}
+.Creation.top-left-border::after{
+	right: 0px;
+}
+.Creation.top-right-border::after{
+	left: 0px;
+}
+.last-row{
+	border-image: 
+    linear-gradient(
+      to bottom, 
+      white, 
+      rgba(0, 0, 0, 0)
+    ) 1 40%;
+}
+.Creation.top-right-border{
+	border-left: 1px solid white;
+}
+.Creation.last,.top-border.last{
+	border-right: 1px solid white;
+}
+.bottom-shadow{
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	bottom: 100px;
+	background:-webkit-gradient( linear,left bottom,left top, from(hsl(0, 0%, 0%)), color-stop(8.4%, hsla(0, 0%, 0%, 0.987)), color-stop(16.6%, hsla(0, 0%, 0%, 0.951)), color-stop(24.8%, hsla(0, 0%, 0%, 0.896)), color-stop(32.8%, hsla(0, 0%, 0%, 0.825)), color-stop(40.6%, hsla(0, 0%, 0%, 0.741)), color-stop(48.2%, hsla(0, 0%, 0%, 0.648)), color-stop(55.5%, hsla(0, 0%, 0%, 0.55)), color-stop(62.5%, hsla(0, 0%, 0%, 0.45)), color-stop(69.1%, hsla(0, 0%, 0%, 0.352)), color-stop(75.4%, hsla(0, 0%, 0%, 0.259)), color-stop(81.3%, hsla(0, 0%, 0%, 0.175)), color-stop(86.7%, hsla(0, 0%, 0%, 0.104)), color-stop(91.7%, hsla(0, 0%, 0%, 0.049)), color-stop(96.1%, hsla(0, 0%, 0%, 0.013)), to(hsla(0, 0%, 0%, 0)) );
+    background:-o-linear-gradient( bottom, hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0.987) 8.4%, hsla(0, 0%, 0%, 0.951) 16.6%, hsla(0, 0%, 0%, 0.896) 24.8%, hsla(0, 0%, 0%, 0.825) 32.8%, hsla(0, 0%, 0%, 0.741) 40.6%, hsla(0, 0%, 0%, 0.648) 48.2%, hsla(0, 0%, 0%, 0.55) 55.5%, hsla(0, 0%, 0%, 0.45) 62.5%, hsla(0, 0%, 0%, 0.352) 69.1%, hsla(0, 0%, 0%, 0.259) 75.4%, hsla(0, 0%, 0%, 0.175) 81.3%, hsla(0, 0%, 0%, 0.104) 86.7%, hsla(0, 0%, 0%, 0.049) 91.7%, hsla(0, 0%, 0%, 0.013) 96.1%, hsla(0, 0%, 0%, 0) 100% );
+	background:linear-gradient( to top, hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0.987) 8.4%, hsla(0, 0%, 0%, 0.951) 16.6%, hsla(0, 0%, 0%, 0.896) 24.8%, hsla(0, 0%, 0%, 0.825) 32.8%, hsla(0, 0%, 0%, 0.741) 40.6%, hsla(0, 0%, 0%, 0.648) 48.2%, hsla(0, 0%, 0%, 0.55) 55.5%, hsla(0, 0%, 0%, 0.45) 62.5%, hsla(0, 0%, 0%, 0.352) 69.1%, hsla(0, 0%, 0%, 0.259) 75.4%, hsla(0, 0%, 0%, 0.175) 81.3%, hsla(0, 0%, 0%, 0.104) 86.7%, hsla(0, 0%, 0%, 0.049) 91.7%, hsla(0, 0%, 0%, 0.013) 96.1%, hsla(0, 0%, 0%, 0) 100% );
+}
+.Message{
+	display: grid;
+	align-items: center;
+}
+.Message p{
+	text-align: center;
+	width: 100%;
+}
+.for-mobile{
+	display: none;
+}
+@media only screen and (max-width: 700px) {
+	.for-mobile{
+		display: block;
+	}
+	.no-mobile{
+		display: none;
+	}
+	.About{
+		grid-template-columns:auto;
+	}
+	.About div:nth-child(2){
+		grid-row: 1;
+	}
+	.About div:nth-child(1){
+		display: grid;
+		align-items: center;
+	}
+	.Creations{
+		grid-template-columns: 30px 1fr 30px;
+		grid-template-rows: 30px 300px 300px 200px;
+	}
+}
+a{
+	text-decoration: none;
+}
+.patreon{
+	color:#FF424D;
+	margin-left: 12px;
+}
+.youtube{
+	color:#ff0000;
+	margin-left: 12px;
+}
+.mastodon{
+	color:#5b4de3;
+}
